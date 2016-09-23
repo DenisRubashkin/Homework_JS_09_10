@@ -1,0 +1,207 @@
+body {
+  background-color: #000;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    height: 300px;
+    width: 600px;
+}
+
+.jcarousel__list {
+    position: relative;
+    height: 300px;
+    margin: auto;
+    width: 3000px;
+}
+
+.jcarousel__item {
+    float: left;
+    height: 300px;
+    width: 300px;
+}
+
+.jcarousel__item img {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.jcarousel__buttons {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.demonstrate {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.fancy-demo {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.js-checkboxes,
+.css-checkboxes {
+  background-color: darkorange;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.js-checkboxes {
+  float: left;
+}
+
+.css-checkboxes {
+  float: right;
+}
+
+.css-checkbox {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.js-checkbox__item,
+.css-checkbox__item {
+  margin: 10px;
+  position: relative;
+  text-align: left;
+  font-size: 0;
+}
+
+.js-checkbox__itemcaption,
+.css-checkbox__itemcaption {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.js-checkbox:disabled+.js-checkbox__itemcaption,
+.css-checkbox:disabled+.css-checkbox__itemcaption {
+  color: #666;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  cursor: default;
+}
+
+.css-checkbox__itemcaption:before {
+  content: "";
+  display: inline-block;
+  background: url("../img/checkbox.png");
+  height: 17px;
+  margin-right: 5px;
+  margin-top: 4px;
+  position: relative;
+  top: 3px;
+  width: 17px;
+}
+
+.css-checkbox:disabled+.css-checkbox__itemcaption:before {
+  background: url("../img/checkbox-disabled.png");
+}
+
+.css-checkbox:checked:not(:disabled)+.css-checkbox__itemcaption:before {
+  background: url("../img/checkbox.png");
+  background-position: 0 -17px;
+}
+
+nav {
+  background-color: #ff6464;
+  height: 50px;
+  font-size: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.menu {
+  padding: 0 20%;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu__item a {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.menu__item.submenu>a {
+  background: url('../img/arrow-down.png') no-repeat right 23px; 
+}
+
+.menu__item a:hover {
+  color: #000;
+}
+
+.menu__submenu--bottom {
+  background-color: #e14b4b;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  overflow: hidden;
+  display: none;
+  z-index: 10;
+}
+
+.menu__submenu--right {
+  background-color: #e14b4b;
+  position: absolute;
+  top:0;
+  left: 190px;
+  width: 200px;
+  overflow: hidden;
+  display: none;
+  z-index: 11;
+}
+
+.submenu__item {
+  background-color: #e14b4b;
+  margin: 0;             
+  position: relative;
+}
+
+.submenu__item:last-child {
+  border-bottom: 0;
+}
+
+.submenu__item a {
+  margin: 0 10px;
+  text-align: left;
+  padding: 0 0 0 20px;
+  width: 180px;
+  border-bottom: 1px solid #c83232;
+}
+
+.submenu__item.submenu>a {
+  background: url('../img/arrow-right.png') no-repeat right; 
+}
+
+.arrow {
+  padding-left: 10px;
+}
+
+.arrow-right {
+  padding-left: 100px;
+}
