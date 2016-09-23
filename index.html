@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Демонстрация: Закладки и Всплывающие подсказки</title>
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fancySelect.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/plugins/jquery.jcarousel.js"></script>
+  <script type="text/javascript" src="js/plugins/fancySelect.js"></script>
+
+</head>
+<body>
+  <div class="wrapper">   
+    <nav>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#">Nav 1</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Nav 2</a>
+        </li>
+        <li class="menu__item submenu">
+          <a href="#">Nav 3<img class="arrow"></a>
+          <ul class="menu__submenu--bottom">
+            <li class="submenu__item">
+              <a href="#">Nav 3.1</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Nav 3.2</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Nav 3.3</a>
+            </li>
+            <li class="submenu__item submenu">
+              <a href="#">Nav 3.4<img class="arrow-right"></a>
+              <ul class="menu__submenu--right">
+                <li class="submenu__item">
+                  <a href="#">Nav 3.4.1</a>
+                </li>
+                <li class="submenu__item submenu">
+                  <a href="#">Nav 3.4.2</a>
+                  <ul class="menu__submenu--right">
+                    <li class="submenu__item">
+                      <a href="#">Nav 3.4.2.1</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#">Nav 3.4.2.2</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#">Nav 3.4.2.3</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#">Nav 3.4.2.4</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#">Nav 3.4.2.5</a>
+                    </li>            
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <a href="#">Nav 3.4.3</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#">Nav 3.4.4</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#">Nav 3.4.5</a>
+                </li>            
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <a href="#">Nav 3.5</a>
+            </li>            
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#">Nav 4</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Nav 5</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="jcarousel">
+      <ul class="jcarousel__list">
+        <li class="jcarousel__item">
+          <img src="img/img_001.png" height="256" width="256">
+        </li>
+        <li class="jcarousel__item">
+          <img src="img/img_002.png" height="256" width="256">
+        </li>
+        <li class="jcarousel__item">
+          <img src="img/img_003.png" height="256" width="256">
+        </li>
+        <li class="jcarousel__item">
+          <img src="img/img_004.png" height="256" width="256">
+        </li>
+        <li class="jcarousel__item">
+          <img src="img/img_005.png" height="256" width="256">
+        </li>
+      </ul>
+    </div>
+    <div class="jcarousel__buttons"> 
+      <button id="prev">&lt;&lt;</button>
+      <button id="next">&gt;&gt;</button>
+    </div>
+    <form action="#" class="demonstrate clearfix">
+      <div class="fancy-demo">
+        <select class="fancy">
+          <option>Вот те раз!</option>
+          <option>Вот те два!</option>
+          <option>И еще разок!</option>
+        </select>
+      </div>
+      <ul class="js-checkboxes">      
+        <li class="js-checkbox__item">
+          <input type="checkbox" name="js-checkbox" id="js-checkbox-01" class="js-checkbox" checked>
+          <label for="js-checkbox-01" class="js-checkbox__itemcaption">JS - чекбокс 1</label>
+        </li>
+        <li class="js-checkbox__item">
+          <input type="checkbox" name="js-checkbox" id="js-checkbox-02" class="js-checkbox"  disabled>
+          <label for="js-checkbox-02" class="js-checkbox__itemcaption">JS - чекбокс 2</label>
+        </li>
+        <li class="js-checkbox__item">
+          <input type="checkbox" name="js-checkbox" id="js-checkbox-03" class="js-checkbox">
+          <label for="js-checkbox-03" class="js-checkbox__itemcaption">JS - чекбокс 3</label>
+        </li>
+      </ul>
+      <ul class="css-checkboxes">      
+        <li class="css-checkbox__item">
+          <input type="checkbox" name="css-checkbox" id="css-checkbox-01" class="css-checkbox" checked>
+          <label for="css-checkbox-01" class="css-checkbox__itemcaption">CSS - чекбокс 1</label>
+        </li>
+        <li class="css-checkbox__item">
+          <input type="checkbox" name="css-checkbox" id="css-checkbox-02" class="css-checkbox" disabled>
+          <label for="css-checkbox-02" class="css-checkbox__itemcaption">CSS - чекбокс 2</label>
+        </li>
+        <li class="css-checkbox__item">
+          <input type="checkbox" name="css-checkbox" id="css-checkbox-03" class="css-checkbox">
+          <label for="css-checkbox-03" class="css-checkbox__itemcaption">CSS - чекбокс 3</label>
+        </li>
+      </ul>
+    </form>
+  </div>   
+  <script type="text/javascript" src="js/lib.js"></script>
+</body>
+</html>
